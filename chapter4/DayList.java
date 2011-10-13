@@ -7,10 +7,18 @@
 class DayList {
     public static void main(String[] args) {
         int yearIn = 2008;
+        int monthIn = 1;
+        int daysIn = 1;
         if (args.length > 0)
             yearIn = Integer.parseInt(args[0]);
-        System.out.println(months + "-" + days + "-" + yearIn);
-    }
+        while (monthIn != 13) {
+//            System.out.println(months + "-" + days + "-" + yearIn);
+              while (daysIn < (countDays(monthIn, yearIn) + 1));
+              System.out.println(monthIn + "-" + daysIn + "-" + yearIn);
+              monthIn++; 
+              daysIn++;
+  }
+}
 
     static int countDays(int month, int year) {
        int count = -1;
@@ -41,4 +49,4 @@ class DayList {
            return count;
          } 
 
-
+}
