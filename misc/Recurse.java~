@@ -1,0 +1,27 @@
+public class Recurse
+{
+ public static void main(String[] args)
+ {
+   intx = 15;
+   int triplex = triple1(x);
+   
+   System.out.println("x is" +x);
+   System.out.println("x tripled is" + triplex);
+  
+}
+ 
+ public static int triple1(int n)
+ {
+   return n*3;
+ }
+ public static int triple2(int n)
+ {
+   return 0;
+ }
+ 
+ public static int triple3(int n)
+ {
+   return 0;
+ }
+ 
+}
