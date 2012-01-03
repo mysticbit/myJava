@@ -1,0 +1,8 @@
+1. Create a modified version of the Storefront project that includes 
+a noDiscount variable for each item. When this variable is true, sell 
+the item at the retail price.
+
+2. Create a ZipCode class that uses access control to ensure that its 
+zipCode instance variable always has a five- or nine-digit value.
+
+
