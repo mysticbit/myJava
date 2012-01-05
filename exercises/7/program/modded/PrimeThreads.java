@@ -1,4 +1,8 @@
-/* This is the actual program that will utilize the PrimeFinder class,
+/*
+2. Modify the PrimeThreads application so that it can handle the new
+NegativeNumberException error.
+
+This is the actual program that will utilize the PrimeFinder class,
 chapter 7.4, this is to demonstrate Threads */
 
 public class PrimeThreads {

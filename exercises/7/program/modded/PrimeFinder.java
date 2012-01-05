@@ -1,6 +1,12 @@
-/* PrimeFinder chp 7.3, this demonstrates the concenpt of Threads,
+/* 
+1. Modify the PrimeFinder class so that it throws a new exception,
+NegativeNumberException, if a negative number is sent to the constructor.
+
+PrimeFinder chp 7.3, this demonstrates the concenpt of Threads,
 which allows for multi-tasking and splitting of programs into
 different segments so that it does not become a resource hog */
+
+
 
 public class PrimeFinder implements Runnable {
     public long target;
@@ -8,13 +14,14 @@ public class PrimeFinder implements Runnable {
     public boolean finished = false;
     private Thread runner;
 
-    PrimeFinder(long inTarget) throws NegativeNumberException {
+    PrimeFinder(long inTarget) {
         target = inTarget;
         if (runner == null) {
             runner = new Thread(this);
             runner.start();
         }
     }
+
     public void run() {
         long numPrimes = 0;
         long candidate = 2;
